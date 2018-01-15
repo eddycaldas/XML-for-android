@@ -1,0 +1,44 @@
+<textView
+  android:text="Happy Birthday!"
+  android:background="@android:color/darker_gray"
+  android:layout_width="110dp"
+  android:layout_height="35dp" />
+  <!-- --------------------------> 
+  
+<textView
+  android:text="Happy Birthday!"
+  android:background="@android:color/darker_gray"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textSize="22sp" />  
+  <!-- --------------------------> 
+  
+<textView
+  android:text="Happy Birthday!"
+  android:background="@android:color/darker_gray"
+  android:layout_width="wrap_content"
+  android:layout_height="150dp" />
+  <!-- --------------------------> 
+
+<textView
+  android:text="Happy Birthday!"
+  android:background="#E91E63"
+  android.textColor="#3E2723"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" />
+  <!-- --------------------------> 
+  
+<textView
+  android:src="@drawable/ocean"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:scaleType="center" />
+  <!-- --------------------------> 
+
+<textView
+  android:text="Oh the posibilities of TextView!"
+  android:textSize="36sp"
+  android:textStyle="italic"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" />
+  <!-- --------------------------> 
