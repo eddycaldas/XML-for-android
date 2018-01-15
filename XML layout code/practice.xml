@@ -1,11 +1,11 @@
-<textView
+<TextView
   android:text="Happy Birthday!"
   android:background="@android:color/darker_gray"
   android:layout_width="110dp"
   android:layout_height="35dp" />
   <!-- --------------------------> 
   
-<textView
+<TextView
   android:text="Happy Birthday!"
   android:background="@android:color/darker_gray"
   android:layout_width="wrap_content"
@@ -13,14 +13,14 @@
   android:textSize="22sp" />  
   <!-- --------------------------> 
   
-<textView
+<TextView
   android:text="Happy Birthday!"
   android:background="@android:color/darker_gray"
   android:layout_width="wrap_content"
   android:layout_height="150dp" />
   <!-- --------------------------> 
 
-<textView
+<TextView
   android:text="Happy Birthday!"
   android:background="#E91E63"
   android.textColor="#3E2723"
@@ -28,17 +28,288 @@
   android:layout_height="wrap_content" />
   <!-- --------------------------> 
   
-<textView
+<TextView
   android:src="@drawable/ocean"
   android:layout_width="wrap_content"
   android:layout_height="wrap_content"
   android:scaleType="center" />
   <!-- --------------------------> 
 
-<textView
+<TextView
   android:text="Oh the posibilities of TextView!"
   android:textSize="36sp"
   android:textStyle="italic"
   android:layout_width="wrap_content"
   android:layout_height="wrap_content" />
   <!-- --------------------------> 
+  
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  
+    <TextView
+      android:text="Guest List"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="24sp" 
+      android:background="#4CAF50" />
+      
+    <TextView
+      android:text="Kunal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="24sp" 
+      android:background="#4CAF50" />  
+        
+    <TextView
+      android:text="Kagure"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="24sp" 
+      android:background="#4CAF50" />
+          
+    <TextView
+      android:text="Lyla"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="24sp" 
+      android:background="#4CAF50" />
+      
+</LinearLayout>      
+      
+<!-- -----------------------> 
+<!-- same happens if want to do it with horizontal LinearLayout. the width:0dp 
+and the weight:1 or any other number -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/ocean"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:text="You're invited!"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:textSize="54sp"
+        android:background="#009688" />
+
+    <TextView
+        android:text="Bonfire at the beach"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:background="#009688" />
+
+</LinearLayout>
+  
+  <!-- ---------------------->  
+  <!-- text and images, wrap c0ntent and weight applied to the image:1 -->
+  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/ocean"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:text="You're invited!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="54sp"
+        android:background="#009688" />
+
+    <TextView
+        android:text="Bonfire at the beach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:background="#009688" />
+
+</LinearLayout>
+
+<!-- RELATIVE LAYOUT VIEW GROUP----->  
+
+<!-- ****Rrelative to the parent -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Happy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Birthday" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="To You" />
+</RelativeLayout>
+
+<!-- Relative to other views -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lyla_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="24sp"
+        android:text="Lyla" />
+
+    <TextView
+        android:id="@+id/me_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/lyla_text_view"
+        android:textSize="24sp"
+        android:text="Me" />
+
+    <TextView
+        android:id="@+id/natalie_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lyla_text_view"
+        android:textSize="24sp"
+        android:text="Natalie" />
+
+    <TextView
+        android:id="@+id/jennie_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="24sp"
+        android:text="Jennie" />
+
+    <TextView
+        android:id="@+id/omoju_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/jennie_text_view"
+        android:textSize="24sp"
+        android:text="Omoju" />
+
+    <TextView
+        android:id="@+id/amy_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/omoju_text_view"
+        android:textSize="24sp"
+        android:text="Amy" />
+
+    <TextView
+        android:id="@+id/ben_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:text="Ben" />
+
+    <TextView
+        android:id="@+id/kunal_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/ben_text_view"
+        android:textSize="24sp"
+        android:text="Kunal" />
+
+    <TextView
+        android:id="@+id/kagure_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/ben_text_view"
+        android:layout_alignParentRight="true"
+        android:textSize="24sp"
+        android:text="Kagure" />
+
+</RelativeLayout>
+
+<!-- For list items (image and 3 texts on side) -->
+<!-- image on left and three texts on the right of image  -->
+<!-- with each text under each other -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ocean" />
+
+    <TextView
+        android:id="@+id/PebbleBeach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pebble Beach"
+        android:layout_toRightOf="@id/image_view"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/california"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="California"
+        android:layout_toRightOf="@id/image_view"
+        android:layout_below="@id/PebbleBeach"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 miles away"
+        android:layout_toRightOf="@id/image_view"
+        android:layout_below="@id/california"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+</RelativeLayout>
+
+
+
